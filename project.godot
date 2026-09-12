@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Hollow Knight Greyprince"
+config/description="An unofficial Hollow Knight adaptation game"
+config/version="0.0.1"
+run/main_scene="uid://b3t6ueghyvqn3"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.00022259181, 0.00022259181, 0.00022259181, 1)
+boot_splash/image="uid://blrv8p7haxssf"
+config/icon="uid://bvtysdhbspecs"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.09123267, 0.09123267, 0.09123267, 1)
